@@ -1,0 +1,12 @@
+language: ruby
+rvm: 2.0.0
+before_script:
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake setup'
+script: rake build
+after_success:
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && rake publish'
+
+env:
+  global:
+    secure: "VIici/goKVTX6qmKw1olVF4trrwpED4YQTOpg5fkyY4yTCPs1HsLtlmfijkq99OqJyCySwO2sF3SV9Qw/32DsZCl6U
+Mw6W9dbKT0z52nepvWfPofSGervQHhKpXLknAydU0ySM8UMp8AfNIU72cmpHxX+v+WvaXeN5FKPUy54lI="
