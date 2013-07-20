@@ -8,5 +8,8 @@ after_success:
 
 env:
   global:
-    secure: "VIici/goKVTX6qmKw1olVF4trrwpED4YQTOpg5fkyY4yTCPs1HsLtlmfijkq99OqJyCySwO2sF3SV9Qw/32DsZCl6U
-Mw6W9dbKT0z52nepvWfPofSGervQHhKpXLknAydU0ySM8UMp8AfNIU72cmpHxX+v+WvaXeN5FKPUy54lI="
+    - secure: "VIici/goKVTX6qmKw1olVF4trrwpED4YQTOpg5fkyY4yTCPs1HsLtlmfijkq99OqJyCySwO2sF3SV9Qw/32DsZCl6UMw6W9dbKT0z52nepvWfPofSGervQHhKpXLknAydU0ySM8UMp8AfNIU72cmpHxX+v+WvaXeN5FKPUy54lI="
+    - GIT_COMMITTER_NAME=travis
+    - GIT_COMMITTER_EMAIL=travis@example.com
+    - GIT_AUTHOR_NAME=travis
+    - GIT_AUTHOR_EMAIL=travis@example.com
